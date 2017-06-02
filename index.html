@@ -1,0 +1,624 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>app10 proyecto final</title>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+ 
+ <!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app10.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <!--grupo JavaScript-->
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+ 
+ 
+ <script type="text/javascript">
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+ </head>
+
+ <body onLoad="MM_preloadImages('imagenes/9.jpg','imagenes/18.jpg','imagenes/21.jpg','imagenes/3.jpg','imagenes/10.jpg','imagenes/7.jpg')">
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+   
+	 <div data-role="header" data-add-back-btn="true" data-black-btn-txt="Regresar" data-back-btn-theme="b">
+     <h1>proyecto final</h1>
+    </div>
+    <div data-role="main" class="ui-content" align="center">
+    <div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/9.jpg" alt="9" title="9" id="wows2_0"/></li>
+		<li><img src="data2/images/10.jpg" alt="10" title="10" id="wows2_1"/></li>
+		<li><img src="data2/images/11.jpg" alt="11" title="11" id="wows2_2"/></li>
+		<li><img src="data2/images/12.jpg" alt="12" title="12" id="wows2_3"/></li>
+		<li><img src="data2/images/13.jpg" alt="13" title="13" id="wows2_4"/></li>
+		<li><img src="data2/images/14.jpg" alt="14" title="14" id="wows2_5"/></li>
+		<li><img src="data2/images/15.jpg" alt="15" title="15" id="wows2_6"/></li>
+		<li><img src="data2/images/16.jpg" alt="16" title="16" id="wows2_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/17.jpg" alt="wow slider" title="17" id="wows2_8"/></a></li>
+		<li><img src="data2/images/18.jpg" alt="18" title="18" id="wows2_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="9"><span><img src="data2/tooltips/9.jpg" alt="9"/>1</span></a>
+		<a href="#" title="10"><span><img src="data2/tooltips/10.jpg" alt="10"/>2</span></a>
+		<a href="#" title="11"><span><img src="data2/tooltips/11.jpg" alt="11"/>3</span></a>
+		<a href="#" title="12"><span><img src="data2/tooltips/12.jpg" alt="12"/>4</span></a>
+		<a href="#" title="13"><span><img src="data2/tooltips/13.jpg" alt="13"/>5</span></a>
+		<a href="#" title="14"><span><img src="data2/tooltips/14.jpg" alt="14"/>6</span></a>
+		<a href="#" title="15"><span><img src="data2/tooltips/15.jpg" alt="15"/>7</span></a>
+		<a href="#" title="16"><span><img src="data2/tooltips/16.jpg" alt="16"/>8</span></a>
+		<a href="#" title="17"><span><img src="data2/tooltips/17.jpg" alt="17"/>9</span></a>
+		<a href="#" title="18"><span><img src="data2/tooltips/18.jpg" alt="18"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">http://wowslider.net/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+	</div>
+<br>
+        <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>22 de abril</h2>
+       <p>Dia Internacional de la tierra</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>27 de septiembre</h2>
+       <p>dia internacional de la conciencia Ambiental</p>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>22 de mayo</h2>
+       <p>Dia internacional de la biodiversidad</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>para que nos sirven los dias internacionales</h2>
+       <p></p>
+       </a>
+     </li>
+    </ul>
+    </div>
+    <BR>
+    <BR>
+    <BR>
+    <BR>
+    <div>
+    <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+		<li><img src="data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+		<li><img src="data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+		<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+		<li><img src="data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
+		<li><img src="data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/7.jpg" alt="css slider" title="7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/8.jpg" alt="8" title="8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1"><span><img src="data1/tooltips/1.jpg" alt="1"/>1</span></a>
+		<a href="#" title="2"><span><img src="data1/tooltips/2.jpg" alt="2"/>2</span></a>
+		<a href="#" title="3"><span><img src="data1/tooltips/3.jpg" alt="3"/>3</span></a>
+		<a href="#" title="4"><span><img src="data1/tooltips/4.jpg" alt="4"/>4</span></a>
+		<a href="#" title="5"><span><img src="data1/tooltips/5.jpg" alt="5"/>5</span></a>
+		<a href="#" title="6"><span><img src="data1/tooltips/6.jpg" alt="6"/>6</span></a>
+		<a href="#" title="7"><span><img src="data1/tooltips/7.jpg" alt="7"/>7</span></a>
+		<a href="#" title="8"><span><img src="data1/tooltips/8.jpg" alt="8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<br>
+  <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Datos del diseñador</h2>
+       <p></p>
+       </a>
+     </li>
+    </ul>
+    </div>
+    </div>
+
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+     <div>
+      <h4>Cuidemos el planeta</h4>
+      <h4>Raymundo Angel Vazquez Rojas</h4>
+     </div>
+    </div>
+   </div>
+   
+   
+   <!--paginas-->
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Dia internacional de la tierra</h1>
+     </div>
+     <div data-role="content" align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s1','','imagenes/9.jpg',1)"><img src="imagenes/2.jpg" width="50%" height="50%" id="s1"></a>
+<div>
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>DATOS</h1>
+       <div>
+       <img src="imagenes/5.jpg" width="220" height="147" alt="imagen de la tierra">
+<P>Nombre oficial:	Día Internacional de la Madre Tierra</P>
+<P>Significado:	Conciencias sobre los retos para preservar el planeta Tierra.</P>
+<P>Día de celebración:	22 de abril</P>
+<P>Celebrado desde:	22 de abril de 1970</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>¿Para que lo celebramos?</h1>
+       <div>
+        <P>
+Celebramos el Día Internacional de la Madre Tierra para recordar que el planeta y sus ecosistemas nos dan la vida y el sustento.
+
+Con esta celebración admitimos la responsabilidad colectiva, como nos recordaba la Declaración de Río de 1992, de fomentar la harmonía con la naturaleza y la Madre Tierra para alcanzar el equilibrio justo entre las necesidades económicas, sociales y medioambientales de las generaciones presentes y futuras.</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+      
+<div data-role="collapsible" data-content-theme="false">
+  <h1>ANTECEDENTES</h1>
+       <div>
+        <P>En 1968, Morton Hilbert y el U.S. Public Health Service (Servicio de Salud Pública de E.E.U.U.), organizaron el Simposio de Ecología Humana, se realiza una conferencia por los nombrados anteriormente para una asamblea o conferencia medioambiental para que estudiantes escucharan a científicos hablar sobre los efectos del deterioro ambiental en la salud humana.2 Este fue el primer antecedente del Día de la Tierra.</p>
+
+        <br>
+       </div>
+	   <hr>
+      
+     
+     
+    
+     </div>
+       
+       <br>
+       <hr>
+       <br>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s4','','imagenes/3.jpg',1)"><img src="imagenes/25.jpg" width="50%" height="50%" id="s4"></a>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Imagenes</h2>
+       </a>
+     </li>
+     </ul>
+     
+     
+       </div>
+       </div>
+       <div class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+       <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/motherearthday/videos.shtml" data-role="button" id="beep">
+        <h2>Videos</h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/motherearthday/resources.shtml" data-role="button" id="beep">
+        <h2>mas informacion</h2>
+        </a>
+        </li>
+      </ul>
+     </div>
+     </div>
+
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+     
+     
+     
+     
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Dia internacional de la conciencia ambiental</h1>
+       
+       
+     </div>
+     <div data-role="content" align="center">
+     
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s2','','imagenes/18.jpg',1)"><img src="imagenes/17.jpg" width="50%" height="50%" id="s2"></a>
+<div>
+       
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>¿Por que se celebra?</h1>
+       <div>
+        <P>
+Desde 1995, y por ley, se recuerda cada 27 de setiembre el "Día Nacional de la Conciencia Ambiental" en memoria de las personas fallecidas como consecuencia del escape de gas cianhídrico ocurrido en la ciudad de Avellaneda, Provincia de Buenos Aires, el 27 de septiembre de 1993.</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>Como tener Consiencia Ambiental</h1>
+       <div>
+        <P>Algunos de los aspectos importantes que deben tomarse en cuenta y fortalecerse para fomentar una conciencia ambiental son:</P>
+
+<P>1.- El reconocimiento, valoración y uso adecuado de los recursos naturales.</P>
+
+<P>2.- Generación y aplicación de la educación ambiental.</P>
+
+<P>3.- Acciones encaminadas al reciclaje y reutilización, iniciando desde el hogar y sitios de trabajo.</P>
+
+<P>4.- Minimizar la compra de productos que realmente no  necesitamos, fomentando el consumo ambiental responsable</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>incidente del 27 de septiembre de 1993  </h1>
+       <div>
+        <P>
+Manuel Nuin (79) se desplomó de repente. Su esposa, María Angela (80), quiso socorrerlo, pero el hombre no le contestó. Entonces, la mujer llamó por teléfono a su hijo Horacio (43), quien a su vez avisó a su esposa, Rosa Scala (43). De camino hacia la casa de sus padres, Horacio pasó por un centro de emergencias médicas y, acompañado por un grupo de médicos, se dirigió a la casa de la calle 25 de Mayo 319, de Avellaneda. Cuando entró, encontró a sus padres y a su esposa. Estaban muertos en el piso de la cocina.</P>
+        <br>
+        <div class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+       <li class="ui-first-child ui-last-child">
+        <a href="https://www.youtube.com/watch?v=6pPqZQ05kLc" data-role="button" id="beep">
+        <h2>Video acerca del tema</h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="https://www.clarin.com/sociedad/murieron-intoxicados-hace-anos-todavia-culpables_0_Byg-rpKeRFe.html" data-role="button" id="beep">
+        <h2>mas informacion</h2>
+        </a>
+        </li>
+      </ul>
+     </div>
+     </div>
+       </div>
+	<hr>
+    
+       </div>
+       
+       <br>
+       <hr>
+       <br>
+       
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s5','','imagenes/10.jpg',1)"><img src="imagenes/9.jpg" width="50%" height="50%" id="s5"></a>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Imagenes</h2>
+       </a>
+     </li>
+   </ul>
+     
+       
+       
+       </div>
+       </div>
+       <div class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+       <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/videos.shtml" data-role="button" id="beep">
+        <h2>Video del tema</h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/resources.shtml" data-role="button" id="beep">
+        <h2>mas informacion</h2>
+        </a>
+        </li>
+      </ul>
+     </div>
+     </div>
+     
+
+     
+     
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Dia internacional de la biodiversidad</h1>
+     </div>
+     <div data-role="content" align="center">
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s3','','imagenes/21.jpg',1)"><img src="imagenes/20.jpg" width="50%" height="50%" id="s3"></a>
+<div>
+       
+      <div data-role="collapsible" data-content-theme="false">
+      <h1>Biodiversidad y turismo sostenible</h1>
+       <div>
+        <P>La diversidad de especies, ecosistemas y paisajes atrae al turismo y fomenta el crecimiento económico. A su vez, un sector turístico bien gestionado contribuye de manera significativa a proteger la flora y la fauna, incluso a aumentar las poblaciones de determinadas especies claves, además de concienciar acerca del valor de la biodiversidad a través de los ingresos que genera el turismo.</P>
+
+<P>La celebración del Día Internacional para la Diversidad Biológica nos brinda la oportunidad de resaltar los beneficios que el turismo sostenible tiene para el crecimiento económico, así como para la conservación y el uso sostenible de la biodiversidad.</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>El valor de la diversidad biologica</h1>
+       <div>
+        <P>La protección de la diversidad biológica es un tema de nuestro interes. Los recursos biológicos son los pilares que sustentan las civilizaciones. Los productos de la naturaleza sirven de base a industrias tan diversas como la agricultura, la cosm”tica, la farmaceútica, la industria de pulpa y papel, la horticultura, la construcción y el tratamiento de desechos. La pérdida de esta diversidad biológica amenaza nuestros suministros alimentarios, nuestras posibilidades de recreación y turismo y nuestras fuentes de madera, medicamentos y energía. También interfiere con las funciones ecológicas esenciales.</P>
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       
+       
+       <div data-role="collapsible" data-content-theme="false">
+      <h1>Antecedentes</h1>
+       <div>
+        <P>El 19 de diciembre de 1994, la Asamblea General proclamó el 29 de diciembre, fecha de entrada en vigor del Convenio sobre la Diversidad Biológica, Día Internacional de la Diversidad Biológica (resolución 49/119). La Conferencia de las Partes en el Convenio, celebrada en Nassau en 1994, había recomendado la designación de ese Día. Posteriormente se cambió la fecha al 22 de mayo, como conmemoración de la firma de la Convención sobre Diversidad Biológica</P>
+
+        <br>
+       </div>
+	<hr>
+    
+       </div>
+       
+     
+       <hr>
+       <br>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('s6','','imagenes/7.jpg',1)"><img src="imagenes/8.jpg" width="50%" height="50%" id="s6"></a><br>
+        <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Imagenes</h2>
+       </a>
+     </li>
+     </ul>
+     
+       
+       
+       </div>
+       </div>     
+       <div class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+       <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/videos.shtml" data-role="button" id="beep">
+        <h2>Videos del tema</h2>
+        </a>
+        </li>
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.un.org/es/events/biodiversityday/index.shtml" data-role="button" id="beep">
+        <h2>mas informacion</h2>
+        </a>
+        </li>
+      </ul>
+     </div>
+     </div>
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+     
+     
+     
+     
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Para que nos sirven los dias internacionaes</h1>
+     </div>
+     <div data-role="content" align="center">
+<div>
+<p>Sensibilizar, concienciar, llamar la atención, señalar que existe un problema sin resolver, un asunto importante y pendiente en las sociedades para que, a través de esa sensibilización, los gobiernos y los estados actúen y tomen medidas o para que los ciudadanos así lo exijan a sus representantes.
+       
+      
+       
+       </div>
+       </div>
+       <div class="ui-content" align="center">
+     <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://blogs.un.org/es/2016/11/23/para-que-sirven-los-dias-internacionales/" data-role="button" id="beep">
+        <h2>mas informacion</h2>
+        </a>
+        </li>
+      </ul>
+     </div>
+     </div>
+     
+
+     
+     
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Datos del dise;ador</h1>
+     </div>
+     <div data-role="content" align="center">
+		<div>
+		<p>Raymundo Angel Vazquez Rojas
+        <br>
+        <p>4 E
+        <br>
+        <p>Desarrollo de aplicaciones web 
+        <br>
+        <p>Lic. José Antonio Gómez Hernández 
+        <br>
+       </div>
+       </div>
+ 
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+ <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Imagenes</h1>
+     </div>
+     <div data-role="content" align="center">
+		<div>
+	   <img src="imagenes/1.jpg" width="50%" height="50%"> 
+       <img src="imagenes/2.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/3.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/4.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/5.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/6.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/7.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/8.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/9.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/10.jpg" width="50%" height="50%"> 
+
+
+       </div>
+       </div>
+ 
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+ <div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Imagenes</h1>
+     </div>
+     <div data-role="content" align="center">
+		<div>
+	   <img src="imagenes/11.jpg" width="50%" height="50%"> 
+       <img src="imagenes/12.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/13.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/14.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/15.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/16.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/17.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/18.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/19.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/20.jpg" width="50%" height="50%"> 
+
+
+       </div>
+       </div>
+ 
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+ <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Imagenes</h1>
+     </div>
+     <div data-role="content" align="center">
+		<div>
+	   <img src="imagenes/21.jpg" width="50%" height="50%"> 
+       <img src="imagenes/22.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/23.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/24.jpg" width="50%" height="50%"> 
+	   <img src="imagenes/25.jpg" width="50%" height="50%"> 
+
+
+       </div>
+       </div>
+ 
+     <div data-role="footer" data-theme="a" data-position="fixed">
+     <div align="center">
+      <img src="res/android/mdpi.png" width="46" height="46">
+     </div>
+       <h4>cuidemos el planeta, RAVR</h4>
+     </div>
+     </div>
+     
+     
+     
+     
+                     
+</body>
+</html>
